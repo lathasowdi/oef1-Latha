@@ -18,11 +18,11 @@ namespace oef1
             BtwNummer = btwNummer;
             WerknemersLijst = new List<Werknemers>();
         }
-        public void VerwijderWerknemer(Werknemers nieuwewerknemer)
+        public void WerknemerRemove(Werknemers nieuwewerknemer)
         {
             WerknemersLijst.Remove(nieuwewerknemer);
         }
-        public void WerknemerToevoegen(Werknemers nieuwewerknemer)
+        public void WerknemerAdd(Werknemers nieuwewerknemer)
         {
             WerknemersLijst.Add(nieuwewerknemer);
 

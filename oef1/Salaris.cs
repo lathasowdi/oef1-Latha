@@ -12,17 +12,17 @@ namespace oef1
         public double Brutto { get; set; }
         public double Btw { get; set; }
 
-        public Salaris(string typContract = "Maand", double brutto = 2440.55, double btw = .21)
+        public Salaris(string typContract = "maand", double brutto = 2440.55, double btw = .21)
         {
             TypContract = typContract;
             Brutto = brutto;
             Btw = btw;
         }
 
-        public double BerekenNetto(double Brutto, double btw)
+        public double Netto()
         {
-            double net = Brutto - (Brutto * btw);
-            if (TypContract == "Week")
+            double net = Brutto - (Brutto * Btw);
+            if (TypContract == "week")
             {
                 net /= 4;
             }
